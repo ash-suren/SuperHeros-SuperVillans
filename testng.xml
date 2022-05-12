@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener
+			class-name="com.superhero_villain.reports.Listeners" />
+	</listeners>
+	<test thread-count="5" name="Test">
+		<classes>
+			<class
+				name="com.superhero_villain.tests.TC01_User_Registration" />
+			<class
+				name="com.superhero_villain.tests.TC02_Existing_User_Registration" />
+			<class name="com.superhero_villain.tests.TC03_User_Login" />
+			<class
+				name="com.superhero_villain.tests.TC04_Incorrect_User_Login" />
+			<class name="com.superhero_villain.tests.TC05_Get_AllUsers" />
+			<class name="com.superhero_villain.tests.TC06_AddUser" />
+			<class name="com.superhero_villain.tests.TC07_Update_User" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
